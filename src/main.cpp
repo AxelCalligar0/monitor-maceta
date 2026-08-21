@@ -35,7 +35,12 @@ void setup() {
   // --- CONFIGURACIÓN DE WIFIMANAGER ---
   WiFiManager wm;
 
+
+
   // Timeout para cerrar el portal si nadie se conecta (ej. 3 minutos)
+  wm.setConfigPortalTimeout(180);
+  wm.resetSettings(); 
+
   wm.setConfigPortalTimeout(180);
 
   Serial.println("Iniciando conexión Wi-Fi...");
