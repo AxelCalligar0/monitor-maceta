@@ -40,6 +40,7 @@
               <option value="personalizada">PLANTA PERSONALIZADA</option>
             </select>
           </p>
+          <p>> UMBRAL_OPTIMO: <span id="rango-optimo">--</span></p>
           <div class="metricas-grid">
             <p>> HUMEDAD_SUELO: <span id="humedad-suelo" class="destacado">--</span>%</p>
             <p>> TEMP_AMBIENTE: <span id="temp-ambiente">--</span>°C</p>
@@ -63,6 +64,7 @@
 
             <button type="submit">[GUARDAR_MEDICION]</button>
           </form>
+          <div id="feedback-medicion" class="feedback-terminal"></div>
         </div>
       </section>
 
@@ -85,6 +87,7 @@
       <section id="tab-config" class="contenido-pestana">
         <div class="panel-carga">
           <h3>> CALIBRAR_PLANTA_PERSONALIZADA</h3>
+          <p class="custom-resumen">> CONFIG_ACTUAL: <span id="custom-info-actual">--</span></p>
           <form id="form-planta-custom">
             <label for="custom-nombre">Nombre de la Especie:</label>
             <input type="text" id="custom-nombre" placeholder="Ej: Ficus Lyrata" required>
@@ -97,6 +100,7 @@
 
             <button type="submit">[GUARDAR_CONFIGURACION]</button>
           </form>
+          <div id="feedback-custom" class="feedback-terminal"></div>
         </div>
       </section>
     </main>
